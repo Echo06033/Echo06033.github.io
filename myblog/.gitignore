@@ -2,7 +2,15 @@
 Thumbs.db
 db.json
 *.log
+
+# dependencies
 node_modules/
+
+# hexo 生成的静态文件
 public/
 .deploy*/
+
+# 其他
 _multiconfig.yml
+package-lock.json
+package.json

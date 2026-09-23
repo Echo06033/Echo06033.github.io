@@ -3,18 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 我的博客              # 网站标题，改成你自己的
-subtitle: 记录学习与生活      # 副标题，随意
-description: 这是我的个人博客  # 网站描述
-keywords: 博客,学习,技术     # 用逗号分隔多个关键词
-author: Echo                # 改成你的名字
-language: zh-CN             # 改成中文
-timezone: Asia/Shanghai     # 中国时区
+title: Echo的博客
+subtitle: 记录成长与思考
+description: 这是我的个人博客
+author: Echo
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://echo06033.github.io/myblog/
-root: /myblog/
+url: https://echo06033.github.io
+root: /
 permalink: :year/:month/:day/:id/
 permalink_defaults:
 pretty_urls:
@@ -97,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
