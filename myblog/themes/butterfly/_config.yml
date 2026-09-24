@@ -47,27 +47,27 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/Echo06033 || GitHub || '#24292e'
+  fas fa-envelope: mailto:echo06033@sjtu.edu.cn || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 avatar:
-  img: /img/butterfly-icon.png
-  effect: false
+  img: /img/avatar.jpg
+  effect: true
 
 # Disable all banner images
 disable_top_img: false
 
-# If the banner of page not setting, it will show the default_top_img
-default_top_img:
+# 所有非首页页面的横幅
+default_top_img: /img/background.jpg
 
-# The banner image of index page
-index_img:
+# 首页全屏横幅（RainChan 风格的核心视觉之一）
+index_img: /img/background.jpg
 
 # The banner image of archive page
 archive_img:
@@ -94,7 +94,7 @@ footer_img: false
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background:
+background: '#f6f8fa'
 
 cover:
   # Disable the cover or not
@@ -144,13 +144,13 @@ post_meta:
 # The top_img settings of home page
 # default: top img - full screen, site info - middle
 # The position of site info, eg: 300px/300em/300rem/10%
-index_site_info_top:
+index_site_info_top: 38%
 # The height of top_img, eg: 300px/300em/300rem
 index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -164,8 +164,9 @@ subtitle:
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 首页打字副标题；可随时改成自己的座右铭。
   sub:
+    - 我的计算机学习之旅
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
