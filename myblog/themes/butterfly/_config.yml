@@ -297,7 +297,7 @@ aside:
   # ↓ 作者卡片：显示头像、简介和 GitHub 按钮。
   card_author:
     enable: true
-    description: 记录成长与思考 # 个人简介；可直接改成你想显示的一句话
+    description: 一只玩电脑的猫 # 个人简介；可直接改成你想显示的一句话
     button:
       enable: true
       icon: fab fa-github
