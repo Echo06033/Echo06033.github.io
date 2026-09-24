@@ -10,13 +10,17 @@
 # --------------------------------------
 
 nav:
-  # Navigation bar logo image
+  # 导航栏左上角图标；填写图片路径，例如 /img/logo.png；留空则不显示
   logo:
+  # 是否在导航栏显示网站标题
   display_title: true
+  # 阅读文章时是否显示文章标题
   display_post_title: true
-  # Whether to fix navigation bar
+  # 是否固定导航栏在页面顶部：true 固定，false 随页面滚动
   fixed: false
 
+# ↓ 顶部导航菜单。格式：显示名称: 链接 || Font Awesome 图标。
+# 可添加新行，例如：友链: /link/ || fas fa-link
 menu:
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
@@ -46,6 +50,8 @@ code_blocks:
 # Social media links
 # Formal:
 #   icon: link || the description || color
+# ↓ 社交链接：格式为 图标: 链接 || 鼠标悬停说明 || 颜色。
+# 可增加 B 站、知乎等；暂时不用的行在开头加 # 注释掉即可。
 social:
   fab fa-github: https://github.com/Echo06033 || GitHub || '#24292e'
   fas fa-envelope: mailto:echo06033@sjtu.edu.cn || Email || '#4a7dbe'
@@ -54,19 +60,22 @@ social:
 # Image Settings
 # --------------------------------------
 
+# 浏览器标签页图标。图片应放入 source/img/，网页路径以 /img/ 开头。
 favicon: /img/favicon.ico
 
+# ↓ 右侧作者卡片头像。
 avatar:
-  img: /img/avatar.jpg
-  effect: true
+  img: /img/avatar.jpg # 头像图片路径；替换头像时把新图放进 source/img/
+  effect: true         # 是否启用鼠标悬停旋转效果：true / false
 
 # Disable all banner images
 disable_top_img: false
 
-# 所有非首页页面的横幅
+# ↓ 所有非首页页面（归档、标签、分类、关于我等）的顶部横幅。
+# 图片应放入 source/img/；也可填写 https:// 开头的网络图片链接。
 default_top_img: /img/background.jpg
 
-# 首页全屏横幅（RainChan 风格的核心视觉之一）
+# ↓ 首页全屏横幅（RainChan 风格的核心视觉之一）。
 index_img: /img/background.jpg
 
 # The banner image of archive page
@@ -91,9 +100,8 @@ category_per_img:
 # The background image of footer
 footer_img: false
 
-# Website Background
-# Can set it to color, image URL or an array containing colors and/or image URLs
-# If an array is provided, a random background will be selected from the array on each load
+# ↓ 页面正文背景：可以填颜色（如 '#f6f8fa'）或图片链接/图片路径。
+# 若希望恢复主题默认背景，将值留空即可。
 background: '#f6f8fa'
 
 cover:
@@ -149,10 +157,11 @@ index_site_info_top: 38%
 index_top_img_height:
 
 # The subtitle on homepage
+# ↓ 首页副标题（首页大图标题下方的文字）。
 subtitle:
-  enable: true
+  enable: true # 是否显示副标题
   # Typewriter Effect
-  effect: true
+  effect: true # 是否使用打字机动画；false 时固定显示第一句
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
@@ -176,6 +185,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
+# 首页文章卡片布局：1 左图右文；2 右图左文；3 左右交替（当前 RainChan 风格）；4 上图下文。
 index_layout: 3
 
 # Display the article introduction on homepage
@@ -272,9 +282,10 @@ footer:
 # Aside Settings
 # --------------------------------------
 
+# ↓ 右侧侧边栏总开关：包含作者、公告、最近文章、标签、分类等卡片。
 aside:
-  enable: true
-  hide: false
+  enable: true # 是否显示侧边栏
+  hide: false   # 是否默认隐藏侧边栏
   # Show the button to hide the aside in bottom right button
   button: true
   mobile: true
@@ -284,17 +295,19 @@ aside:
     archive: true
     tag: true
     category: true
+  # ↓ 作者卡片：显示头像、简介和 GitHub 按钮。
   card_author:
     enable: true
-    description: 记录成长与思考
+    description: 记录成长与思考 # 个人简介；可直接改成你想显示的一句话
     button:
       enable: true
       icon: fab fa-github
       text: GitHub
       link: https://github.com/Echo06033
+  # ↓ 公告卡片：右侧栏显示的一段提示文字。
   card_announcement:
     enable: true
-    content: 欢迎来到 Echo 的博客。
+    content: 欢迎来到 Echo 的博客。 # 修改此处可更新公告
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -762,9 +775,10 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
+# ↓ 全站颜色。RainChan 风格的蓝青色由这些值组成；颜色使用 #RRGGBB 格式。
 theme_color:
-  enable: true
-  main: "#49B1F5"
+  enable: true # 是否启用自定义配色
+  main: "#49B1F5" # 主色：导航、按钮、重点元素
   paginator: "#00c4b6"
   button_hover: "#FF7242"
   text_selection: "#00c4b6"

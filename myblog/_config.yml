@@ -3,18 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Echo的博客            # 你的博客名（浏览器标签显示）
-subtitle: 我的计算机学习之旅      # 副标题
-description: 这是我的个人博客，记录学习与生活
-keywords: 博客,学习,技术
-author: Echo                # 作者名
-language: zh-CN             # 中文
-timezone: Asia/Shanghai     # 北京时间
+# ↓ 网站基本信息：修改每行冒号后的内容即可。
+title: Echo的博客            # 网站主标题：浏览器标签、首页标题等
+subtitle: 我的计算机学习之旅      # 网站副标题：部分主题或插件会读取
+description: 这是我的个人博客，记录学习与生活 # 网站简介：搜索引擎和分享信息使用
+keywords: 博客,学习,技术      # 搜索关键词：多个词用英文逗号隔开
+author: Echo                # 作者名：文章信息、页脚等位置使用
+language: zh-CN             # 网站语言：简体中文为 zh-CN
+timezone: Asia/Shanghai     # 时区：中国大陆通常为 Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+# ↓ 网站访问地址：GitHub 个人主页仓库一般保持 https://用户名.github.io
 url: https://echo06033.github.io
+# 个人主页仓库保持 /；普通项目仓库才改成 /仓库名/
 root: /
+# 文章链接格式；改动后旧文章链接会改变
 permalink: :year/:month/:day/:id/
 permalink_defaults:
 pretty_urls:
@@ -62,7 +66,9 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
+  # 首页每页显示的文章数量；可改成 5、8 等
   per_page: 10
+  # 排序方式：-date 为发布时间倒序；-updated 为更新时间倒序
   order_by: -date
 
 # Category & Tag
@@ -97,11 +103,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+# 使用的主题目录名；当前主题文件夹是 themes/butterfly，通常不要改动
 theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 本项目目前由 GitHub Actions 自动构建 Pages，通常无需手动运行 hexo deploy。
+# 下列配置仅在你选择运行 npx hexo deploy 时才会使用。
 deploy:
-  type: git
-  repo: git@github.com:echo06033/echo06033.github.io.git
-  branch: main
+  type: git                 # 部署方式
+  repo: git@github.com:echo06033/echo06033.github.io.git # GitHub 仓库地址
+  branch: main              # 推送目标分支
