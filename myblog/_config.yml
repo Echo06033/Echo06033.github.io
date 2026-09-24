@@ -68,7 +68,7 @@ index_generator:
   path: ''
   # 首页每页显示的文章数量；可改成 5、8 等
   per_page: 10
-  # 排序方式：-date 为发布时间倒序；-updated 为更新时间倒序
+  # 左侧首页文章列表排序：-date 为按发布时间从新到旧（当前设置）；-updated 为按更新时间从新到旧。
   order_by: -date
 
 # Category & Tag

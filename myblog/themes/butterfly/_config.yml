@@ -175,9 +175,8 @@ subtitle:
   source: false
   # 首页打字副标题；可随时改成自己的座右铭。
   sub:
-    - 我的计算机学习之旅
-
-# Article layout on the homepage
+    - my blog ,my life 
+    # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
 # 3: Cover and info alternate between left and right
@@ -308,13 +307,15 @@ aside:
   card_announcement:
     enable: true
     content: 欢迎来到 Echo 的博客。 # 修改此处可更新公告
+  # ↓ 最新文章卡片：按日期从新到旧显示文章。
   card_recent_post:
     enable: true
-    # If set 0 will show all
-    limit: 5
-    # Sort: date / updated
+    # 显示数量；改成 0 表示显示全部文章。
+    limit: 10
+    # 排序依据：date 为发布日期；updated 为最后修改日期。
     sort: date
-    sort_order:
+    # 排序方向：-1 为从新到旧；1 为从旧到新。
+    sort_order: -1
   card_newest_comments:
     enable: false
     sort_order:
@@ -322,23 +323,26 @@ aside:
     # Unit: mins, save data to localStorage
     storage: 10
     avatar: true
+  # ↓ 分类卡片：文章 front-matter 中填写 categories 后会自动出现在这里。
   card_categories:
     enable: true
-    # If set 0 will show all
+    # 显示数量；0 表示显示全部分类。
     limit: 8
-    # Choose: none / true / false
+    # 子分类展开方式：none 不展开；true 全展开；false 全折叠。
     expand: none
     sort_order:
+  # ↓ 标签卡片：文章 front-matter 中填写 tags 后会自动出现在这里。
   card_tags:
     enable: true
-    # If set 0 will show all
+    # 显示数量；0 表示显示全部标签。
     limit: 40
+    # 是否为标签随机着色。
     color: false
     custom_colors:
-    # Order of tags, random/name/length
-    orderby: random
-    # Sort of order. 1, asc for ascending; -1, desc for descending
-    order: 1
+    # 标签排列规则：random 随机；name 按名称；length 按文章数量。
+    orderby: length
+    # 1 为升序；-1 为降序。按文章数量时 -1 会把常用标签放前面。
+    order: -1
     sort_order:
   card_archives:
     enable: true
