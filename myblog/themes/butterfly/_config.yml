@@ -297,7 +297,7 @@ aside:
   # ↓ 作者卡片：显示头像、简介和 GitHub 按钮。
   card_author:
     enable: true
-    description: 一只玩电脑的猫 # 个人简介；可直接改成你想显示的一句话
+    description: 一只不爱学习的猫 # 个人简介；可直接改成你想显示的一句话
     button:
       enable: true
       icon: fab fa-github
@@ -306,7 +306,7 @@ aside:
   # ↓ 公告卡片：右侧栏显示的一段提示文字。
   card_announcement:
     enable: true
-    content: 欢迎来到 Echo 的博客。 # 修改此处可更新公告
+    content: 欢迎来到 ZenSky 的博客。 # 修改此处可更新公告
   # ↓ 最新文章卡片：按日期从新到旧显示文章。
   card_recent_post:
     enable: true
