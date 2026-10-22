@@ -175,7 +175,7 @@ subtitle:
   source: false
   # 首页打字副标题；可随时改成自己的座右铭。
   sub:
-    - my blog ,my life 
+    - What's past is prologue
     # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
