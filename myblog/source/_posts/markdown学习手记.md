@@ -171,7 +171,7 @@ def hello():
 
 ### 11. 其他进阶格式
 
-```markdown
+````markdown
 ### 表情
 :smile:  :rocket:  :fire:  :warning:
 
@@ -196,7 +196,7 @@ A[开始] --> B{判断}
 B -->|是| C[完成]
 B -->|否| A
 ```
-```
+````
 
 效果：
 :smile:  :rocket:  :fire:  :warning:
